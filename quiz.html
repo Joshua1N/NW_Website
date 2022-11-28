@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <link href="quiz.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  function validate() {
+
+    if (document.getElementsByName("tank")[0].checked) {
+      alert("tank checked")
+    } else if (document.getElementsByName('dps')[0].checked) {
+      alert("dps checked")
+    } else {
+      alert("healer checked")
+    }
+  }
+</script>
+
+    <header>
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="http://localhost:63342/NW_Website/index.html?_ijt=75didtjkhol5a2hq4pr74fdm8p&_ij_reload=RELOAD_ON_SAVE#">
+                            <div class="logo_image">
+                                <img src="images/NW_logo.png" class="img-fluid">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="http://localhost:63342/NW_Website/database.html?_ijt=5r7fhle2dujv7tt9gpa595mmg3&_ij_reload=RELOAD_ON_SAVE"><h2>Database</h2></a></li>
+                    <li><a href="http://localhost:63342/NW_Website/market.html?_ijt=5r7fhle2dujv7tt9gpa595mmg3&_ij_reload=RELOAD_ON_SAVE"><h2>Live Market</h2></a></li>
+                    <li><a href="http://localhost:63342/NW_Website/server-status.html?_ijt=5r7fhle2dujv7tt9gpa595mmg3&_ij_reload=RELOAD_ON_SAVE"><h2>Server Status</h2></a></li>
+                    <li><a href="http://localhost:63342/NW_Website/link-account.html?_ijt=5r7fhle2dujv7tt9gpa595mmg3&_ij_reload=RELOAD_ON_SAVE"><h2>Link Account</h2></a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <h1>New World Role Quiz</h1>
+    <h3>This quiz will recommend a role depending on how you choose to play the game.</h3>
+    <div class="question">
+        <h2>1) What Weapons do you use? Choose two.</h2>
+        <p id="weapons">
+            <label><input type="checkbox" name="tank" value="1" onclick=""><span>Sword and Shield</span></label>
+            <label><input type="checkbox" name="dps" value="2" onclick=""><span>Rapier</span></label>
+            <label><input type="checkbox" name="dps" value="3" onclick=""><span>Hatchet</span></label>
+            <label><input type="checkbox" name="dps" value="4" onclick=""><span>Spear</span></label>
+            <label><input type="checkbox" name="dps" value="5" onclick=""><span>Great Axe</span></label>
+            <label><input type="checkbox" name="tank" value="6" onclick=""><span>Great Sword</span></label>
+            <label><input type="checkbox" name="tank" value="7" onclick=""><span>War Hammer</span></label>
+            <label><input type="checkbox" name="healer" value="8" onclick=""><span>Bow</span></label>
+            <label><input type="checkbox" name="healer" value="9" onclick=""><span>Musket</span></label>
+            <label><input type="checkbox" name="healer" value="10" onclick=""><span>Blunderbuss</span></label>
+            <label><input type="checkbox" name="healer" value="11" onclick=""><span>Fire Staff</span></label>
+            <label><input type="checkbox" name="healer" value="12" onclick=""><span>Life Staff</span></label>
+            <label><input type="checkbox" name="healer" value="13" onclick=""><span>Ice Gauntlet</span></label>
+            <label><input type="checkbox" name="healer" value="14" onclick=""><span>Void Gauntlet</span></label>
+        </p>
+    </div>
+    <button class="submit-btn" onclick="validate()">Submit</button>
+</body>
+</html>
